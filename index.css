@@ -522,6 +522,9 @@ footer{
 	.navBtn{
         display: none;
     }
+    .phoneImg{
+        background-size: contain;
+    }
     .easeOfUseImage{
         display: none;
     }
