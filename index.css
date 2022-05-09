@@ -59,7 +59,7 @@ a:hover:not(#signupAnchor){
 }
 @keyframes phoneImgBackground {
     0%{background-image: url('https://atomty1.github.io/goTaxi/assets/asset.jpg');}
-    10%{background-image: url('https://atomty1.github.io/goTaxi/assets/asset.jpg');}
+    /* 10%{background-image: url('https://atomty1.github.io/goTaxi/assets/asset.jpg');} */
     33%{background-image: url('https://atomty1.github.io/goTaxi/assets/asset1.jpg');}
     66%{background-image: url('https://atomty1.github.io/goTaxi/assets/asset2.jpg');}
 }
@@ -159,7 +159,7 @@ button#signupBtn{
 .goNeeds{
     position: relative;
     background-color: #fefeff;
-    background-image: url('/assets/banner.png');
+    background-image: url('https://atomty1.github.io/goTaxi/assets/banner.png');
     background-repeat: repeat-x;
     background-size: 30% 150px;
     background-position: bottom 200px right 50%;
@@ -236,7 +236,7 @@ button#signupBtn{
     z-index: 0;
 }
 .backUseContainer{
-    background-image: url('/assets/back-use.jpg');
+    background-image: url('https://atomty1.github.io/goTaxi/assets/back-use.jpg');
     background-repeat: no-repeat;
     padding-bottom: 0px;
    
@@ -251,7 +251,7 @@ button#signupBtn{
 }
 .easeOfUseImage{
     width: 50%;
-    background-image: url('/assets/hand.png');
+    background-image: url('https://atomty1.github.io/goTaxi/assets/hand.png');
     background-repeat: no-repeat;
     margin:50px 50px 0px 50px;
 }
@@ -261,14 +261,14 @@ button#signupBtn{
     height: 500px;
     width: 252px;
     background-repeat: no-repeat;
-    background-image: url('/assets/view1.jpg');
+    background-image: url('https://atomty1.github.io/goTaxi/assets/view1.jpg');
     animation: viewImage 4s cubic-bezier(0, 1, 0, 1) infinite;
 }
 @keyframes viewImage {
-    0%{background-image: url('/assets/view1.jpg');}
-    33% {background-image: url('/assets/view2.jpg');}
-    66%{background-color: url('/assets/view3.jpg');}
-    100%{background-color: url('/assets/view3.jpg');}  
+    0%{background-image: url('https://atomty1.github.io/goTaxi/assets/view1.jpg');}
+    33% {background-image: url('https://atomty1.github.io/goTaxi/assets/view2.jpg');}
+    66%{background-image: url('https://atomty1.github.io/goTaxi/assets/view3.jpg');}
+    100%{background-image: url('https://atomty1.github.io/goTaxi/assets/view3.jpg');}  
 }
 
 
@@ -379,7 +379,7 @@ button#signupBtn{
     margin-bottom: 60px;
 }
 .animationContainer{
-    background-image: url(/assets/ilustrasion-scene.png);
+    background-image: url('https://atomty1.github.io/goTaxi/assets/ilustrasion-scene.png');
     width: 100%;
     height: 280px;
     background-repeat: no-repeat;
@@ -396,20 +396,20 @@ button#signupBtn{
 #firstVehicle{
     background-size: auto 100px;
     background-repeat: no-repeat;
-    background-image: url('/assets/ilustrasion-vehicle.png');
+    background-image: url('https://atomty1.github.io/goTaxi/assets/ilustrasion-vehicle.png');
     animation: move-image 10s linear 0s infinite normal;
 }
  #secondVehicle{
     background-size: auto 100px;
     background-repeat: no-repeat;
-    background-image: url('/assets/ilustrasion-vehicle-02.png');
+    background-image: url('https://atomty1.github.io/goTaxi/assets/ilustrasion-vehicle-02.png');
     animation: move-second-image 20s linear 0s infinite normal;
 }
 #reverseVehicle{
     background-size: auto 100px;
     background-repeat: no-repeat;
     background-position: 650px 0;
-    background-image: url('/assets/ilustrasi-vehicle-reverse.png');
+    background-image: url('https://atomty1.github.io/goTaxi/assets/ilustrasi-vehicle-reverse.png');
     animation: move-reverse 10s linear 0s infinite normal;
 } 
 
