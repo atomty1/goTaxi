@@ -43,17 +43,76 @@ a:hover:not(#signupAnchor){
 .carousel{
     margin: 0px;
 }
-#phoneImg{
+.phoneImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
     width: 100%;
+    background-image: url('/assets/asset.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: phoneImgBackground 10s cubic-bezier(0, 1, 0, 1) infinite;
 }
+@keyframes phoneImgBackground {
+    0%{background-image: url('/assets/asset.jpg');}
+    10%{background-image: url('/assets/asset.jpg');}
+    33%{background-image: url('/assets/asset1.jpg');}
+    66%{background-image: url('/assets/asset2.jpg');}
+}
+.phoneCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border: 1px solid white;
+}
+.circleFirst{
+    animation: circleFirst 10s cubic-bezier(0, 1, 0, 1) infinite;
+}
+.circleSecond{
+    animation: circleSecond 10s cubic-bezier(0, 1, 0, 1) infinite;
+}
+.circleThird{
+    animation: circleThird 10s cubic-bezier(0, 1, 0, 1) infinite;
+}
+@keyframes circleFirst {
+    0%{background-color: white;}
+    10%{background-color: white;}
+    33%{background-color: none;}
+    100%{background-color: none;}
+}
+@keyframes circleSecond {
+    0%{background-color: none;}
+    33%{background-color: white;}
+    100%{background-color: none;}
+}
+@keyframes circleThird {
+    0%{background-color: none;}
+    33%{background-color: none;}
+    100%{background-color: white;}
+}
+/* @keyframes phoneCircle {
+    0%{background-image: url('/assets/asset.jpg');}
+    33%{background-image: url('/assets/asset1.jpg');}
+    66%{background-image: url('/assets/asset2.jpg');}
+} */
+/* #phoneImg{
+    width: 100%;
+} */
 .contentArea{
     margin: 50px;
     padding: 20px;
     display: flex;
     flex-direction: row;
 }
+
 #bookTaxi{
     width: 35%;
+    height: 200px;
 }
 .contentText{
     margin-left: 20px;
@@ -114,7 +173,7 @@ button#signupBtn{
 }
 
 .cards{
-    margin: 65px;
+    margin: 65px 65px 0px 65px;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));  
@@ -168,10 +227,344 @@ button#signupBtn{
 }
 
 .goBlueBack{
-    background-color: #1565c0;
+    background-color: #213ebf;
     height: 200px;
     position: absolute;
     bottom: 0px;
     width: 100%;
     z-index: 0;
+}
+.backUseContainer{
+    background-image: url('/assets/back-use.jpg');
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+   
+
+  
+    /* background-color: #4361ee; */
+    
+}
+.easeOfUse{
+    width: 50%;
+    margin: 20px 0px 0px 10%;
+}
+.easeOfUseImage{
+    width: 50%;
+    background-image: url('/assets/hand.png');
+    background-repeat: no-repeat;
+    margin:50px 50px 0px 50px;
+}
+.viewImage{
+    margin-left: 93px;
+    margin-top: 65px;
+    height: 500px;
+    width: 252px;
+    background-repeat: no-repeat;
+    background-image: url('/assets/view1.jpg');
+    animation: viewImage 4s cubic-bezier(0, 1, 0, 1) infinite;
+}
+@keyframes viewImage {
+    0%{background-image: url('/assets/view1.jpg');}
+    33% {background-image: url('/assets/view2.jpg');}
+    66%{background-color: url('/assets/view3.jpg');}
+    100%{background-color: url('/assets/view3.jpg');}  
+}
+
+
+/* #viewImage{
+    margin-left: 93px;
+    margin-top: 65px
+} */
+.backUseInnerContainer{
+    width: 100%;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: row;
+}
+.useHeader{
+    color: #00b4d8;
+    text-align: right;
+    font-size: 22px;
+}
+.useContent{
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+    /* animation: useContentAnimation 1s ease infinite; */
+}
+.useFirst{
+    animation: useContentFirst 4s linear infinite;
+}
+ .useSecond{
+    animation: useContentSecond 4s linear infinite;
+}
+.useThird{
+    animation: useContentThird 4s linear infinite;
+} 
+.easeFirst{
+    animation: easeFirst 4s linear infinite;
+}
+.easeSecond{
+    animation: easeSecond 4s linear infinite;
+}
+.easeThird{
+    animation: easeThird 4s linear infinite;
+}
+.headerFirst{
+    animation: headerFirst 4s linear infinite;
+}
+.headerSecond{
+    animation: headerSecond 4s linear infinite;
+}
+.headerThird{
+    animation: headerThird 4s linear infinite;
+}
+
+@keyframes easeFirst {
+    0%{background-color: white}
+    66% {background-color: none;}
+    100%{background-color: none;}  
+}
+@keyframes easeSecond {
+    0%{background-color: none;}
+    33% {background-color: white;}
+    66%{background-color: none;}
+    100%{background-color: none;}  
+}
+@keyframes easeThird {
+    0%{background-color: none;}
+    66% {background-color: white}
+    100%{background-color: none;}  
+}
+@keyframes headerFirst {
+    0%{color: #70e000;}
+    66% {color: #00b4d8}
+    100%{color: #00b4d8;}  
+}
+@keyframes headerSecond {
+    0%{color: #00b4d8;}
+    33% {color: #70e000}
+    66%{color: #00b4d8;}
+    100%{color: #00b4d8;}  
+}
+@keyframes headerThird {
+    0%{color: #00b4d8}
+    66% {color: #70e000}
+    100%{color: #00b4d8}  
+}
+@keyframes useContentFirst {
+    0%{color: grey}
+    66% {color: white}
+    100%{color: white}  
+}
+@keyframes useContentSecond {
+    0%{color: white}
+    33% {color: grey}
+    66%{color: white}
+    100%{color: white}  
+}
+@keyframes useContentThird {
+    0%{color: white}
+    66% {color: grey}
+    100%{color: white}  
+}
+
+.easeOfUseHeader{
+    color: white;
+    font-size: 40px;
+    text-align: justify;
+}
+.easeOfUseMain{
+    margin-bottom: 60px;
+}
+.animationContainer{
+    background-image: url(/assets/ilustrasion-scene.png);
+    width: 100%;
+    height: 280px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.movingVehicle{
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    /* z-index: 2; */
+}
+#firstVehicle{
+    background-size: auto 100px;
+    background-repeat: no-repeat;
+    background-image: url('/assets/ilustrasion-vehicle.png');
+    animation: move-image 10s linear 0s infinite normal;
+}
+ #secondVehicle{
+    background-size: auto 100px;
+    background-repeat: no-repeat;
+    background-image: url('/assets/ilustrasion-vehicle-02.png');
+    animation: move-second-image 20s linear 0s infinite normal;
+}
+#reverseVehicle{
+    background-size: auto 100px;
+    background-repeat: no-repeat;
+    background-position: 650px 0;
+    background-image: url('/assets/ilustrasi-vehicle-reverse.png');
+    animation: move-reverse 10s linear 0s infinite normal;
+} 
+
+@keyframes move-image {
+    from{background-position: -650px 0;}
+    to{background-position: 650px 0;}
+}
+@keyframes move-second-image {
+    from{background-position: -650px 0;}
+    to{background-position: 650px 0;}
+}
+@keyframes move-reverse {
+    from{background-position: 650px 0;}
+    to{background-position: -650px 0;}
+    /* to{transform: translateX(-100%);} */
+}
+footer{
+    background-color: rgb(25, 23, 23);
+}
+.logoContainer{
+    width: 30%
+}
+#logoWhite{
+    width: 100%;
+}
+.footerContainer{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.socialsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.socials{
+    --distance: 40px;
+    width: var(--distance);
+    height: var(--distance);
+    background-color: #fff;
+    border-radius: 50%;
+    color: grey;
+    text-align: center;
+    line-height: var(--distance);
+    margin-left: 5%;
+}
+.myUrlsContainer{
+    width: 30%;
+}
+.myUrls{
+    margin-left: 25%
+}
+.myUrls ul{
+    list-style-type: none;
+    color: grey;
+}
+.myUrls ul li{
+    margin-top: 10px;
+    color: black;
+}
+.footerAnchor{
+    color: grey
+}
+.footerAnchor:hover{
+    color: rgb(30, 164, 30);
+}
+.footerBtnContainer{
+    /* background-color: red; */
+    /* margin: auto; */
+    width: 30%;
+}
+#footerBtn{
+    margin: 0 50%;
+    background-color: rgb(25, 23, 23);
+    padding: 20px 0;
+    width: 60%;
+    box-shadow: 0px 0px 0px 0px;
+    
+}
+#footerBtn a{
+    color: #00b4d8;
+}
+#footerBtn:hover>a{
+    color: #fff;
+    text-decoration: underline;
+}
+#footerBtn:hover{
+    background-color: #00b4d8;
+}
+.footerLine{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 1px;
+    background-color: black;
+}
+.copyright{
+    color: white;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+/* breakpoints */
+@media (max-width: 800px){
+	.navBtn{
+        display: none;
+    }
+    .easeOfUseImage{
+        display: none;
+    }
+    .easeOfUse{
+        width: 100%;
+    }
+    .useHeader, .useContent{
+        text-align: left;
+    }
+    .easeOfUseHeader{
+        text-align: center;
+    }
+    .footerContainer{
+        flex-direction: column;
+    }
+    .logoContainer, .myUrlsContainer, .footerBtnContainer{
+        width: 80%;
+        margin:0 auto;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+
+    }
+    .footerBtnContainer{
+        /* margin: 0; */
+        display: flex;
+        flex-direction: column;
+      
+        align-items: center;
+    }
+}
+@media (min-width: 800px){
+	.fa-bars{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+	.contentArea{
+        flex-direction: column;
+    }
+    #bookTaxi{
+        width: 100%;
+        height: 300px;
+    }
 }

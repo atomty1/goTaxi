@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
    <div>
        <div class="navCover">
             <nav>
-                <button><a href="#">USER APK</a></button>
-                <button> <a href="#">DRIVER APK</a></button>
-                <button><a href="#">JOIN DRIVER</a></button>
+                <button class="navBtn"><a href="#">USER APK</a></button>
+                <button class="navBtn"> <a href="#">DRIVER APK</a></button>
+                <button class="navBtn"><a href="#">JOIN DRIVER</a></button>
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
             </nav>
-
        </div>
-       
        <div class="carousel">
-           <div>
-               <img id="phoneImg" src="https://gotaxi.biz/asset/images/banner/asset1.jpg"/>
+           <div class="phoneImg">
+               <div class="phoneCircle circleFirst"></div>
+               <div class="phoneCircle circleSecond"></div>
+               <div class="phoneCircle circleThird"></div>
            </div>
        </div>
        <div class="contentArea">
@@ -149,11 +151,76 @@
             </div>
            
        </div>
-       <div style="background-color: red; margin: 0;">
-           I am a boy
+       <div class="backUseContainer">
+           <div class="backUseInnerContainer">
+                <div class="easeOfUse">
+                        <h2 class="easeOfUseHeader">EASE OF USE OF GOTAXI</h2>
+                        <div class="easeOfUseMain easeFirst">
+                            <h3 class="useHeader headerFirst">SPECIFY PICK-UP AND DELIVERY</h3>
+                            <p class="useContent useFirst">Specify pickup and delivery points.
+                                Go-Taxi will estimate the delivery cost for you.
+                            </p>
+                        </div>
+                        <div class="easeOfUseMain easeSecond">
+                            <h3 class="useHeader headerSecond">DRIVER SEARCH</h3>
+                            <p class="useContent useSecond">Go-Taxi will find drivers around you.
+                                You just wait for confirmation from drivers
+                            </p>
+                        </div>
+                        <div class="easeOfUseMain easeThird">
+                            <h3 class="useHeader headerThird">CHAT FEATURE</h3>
+                            <p class="useContent useThird">Once driver finds you, easily contact them
+                                by phone or free chat. Rates will be adjusted 
+                                according to the distance pickup and delivery.
+                            </p>
+                        </div>
+                </div>
+                <div class="easeOfUseImage">
+                    <div class="viewImage"></div>
+                    <!-- <img id="viewImage" src="/assets/view1.jpg"/> -->
+                </div>
+           </div>
        </div>
+       <div class="animationContainer">
+           
+           <div id="secondVehicle" class="movingVehicle"></div>
+           <div id="reverseVehicle" class="movingVehicle"></div>
+           <div id="firstVehicle" class="movingVehicle"></div>
+       </div>
+       <footer>
+           <div class="footerContainer">
+                <div class="logoContainer">
+                    <img id="logoWhite" src="/assets/logo_white.png"/>
+                    <div class="socialsContainer">
+                        <div class="socials"><i class="fab fa-facebook-f"></i></div>
+                        <div class="socials"><i class="fab fa-twitter"></i></div>
+                        <div class="socials"><i class="fab fa-linkedin-in"></i></div>
 
+                    </div>
+                   
+                </div>
+                <div class="myUrlsContainer">
+                    <div class="myUrls">
+                        <ul>
+                            <li style="color:white">Company</li>
+                            <li><a class="footerAnchor" href="#">Home</a></li>
+                            <li><a class="footerAnchor" href="#">Contact us</a></li>
+                            <li><a class="footerAnchor" href="#">FAQ</a></li>
+                            <li><a class="footerAnchor" href="#">Terms & Condition</a></li>
+                            <li><a class="footerAnchor" href="#">Privacy Policy</a></li>
+                        </ul>
 
+                    </div>
+                    
+                </div>
+                <div class="footerBtnContainer">
+                    <button id="footerBtn"><a>JOIN A DRIVER</a></button>
+                </div>
+
+           </div>
+           <div class="footerLine"></div>
+           <div class="copyright">copyright &copy; 2020 GOTAXI. All rights reserved</div>
+        </footer>
    </div> 
 </body>
 </html>
