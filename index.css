@@ -510,12 +510,12 @@ footer{
 }
 .copyright{
     color: white;
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     font-size: 12px;
     text-align: center;
-    height: 100px;
-    line-height: 100px;
+    height: 50px;
+    line-height: 50px;
 }
 /* breakpoints */
 @media (max-width: 800px){
