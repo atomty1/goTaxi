@@ -534,6 +534,7 @@ footer{
     }
     .phoneImg{
         background-size: contain;
+        height: 50vh;
     }
     .contentArea{
         margin-left: 0;
